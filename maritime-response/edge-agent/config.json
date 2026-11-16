@@ -1,0 +1,27 @@
+{
+  "vessel": {
+    "id": "EDGE-001",
+    "name": "Coastal Patrol Vessel",
+    "mmsi": "419000001",
+    "type": "Coastal patrol",
+    "call_sign": "EDGE001"
+  },
+  "backend_url": "http://127.0.0.1:8000/api/v1/telemetry",
+  "http_timeout_seconds": 4,
+  "polling_interval_seconds": 5,
+  "outbox_batch_size": 50,
+  "mqtt": {
+    "enabled": false,
+    "host": "127.0.0.1",
+    "port": 1883,
+    "topic": "maritime/telemetry",
+    "username": "",
+    "password": ""
+  },
+  "simulation": {
+    "scenario": "normal"
+  },
+  "storage": {
+    "database_path": "data/edge_outbox.db"
+  }
+}
